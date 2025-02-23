@@ -1,0 +1,7 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "origin"]
+	url = ssh://vinokurov@stud-05:/home/vinokurov/www/git/
+	fetch = +refs/heads/*:refs/remotes/origin/*
