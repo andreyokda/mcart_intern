@@ -2,9 +2,14 @@
 $PERM["kabinet-pokupatelya"]["*"]="D";
 $PERM["kabinet-pokupatelya"]["G1"]="X";
 $PERM["kabinet-pokupatelya"]["G6"]="X";
+$PERM["kabinet-pokupatelya"]["G8"]="D";
 $PERM["kabinet-prodavtsa"]["*"]="D";
 $PERM["kabinet-prodavtsa"]["G1"]="X";
 $PERM["kabinet-prodavtsa"]["G7"]="X";
+$PERM["kabinet-prodavtsa"]["G8"]="D";
+$PERM["/"]["*"]="R";
+$PERM["/"]["G8"]="W";
+$PERM["bitrix"]["8"]="D";
 $PERM["search"]["5"]="W";
 $PERM["products"]["5"]="W";
 $PERM["services"]["5"]="W";
@@ -12,5 +17,4 @@ $PERM["news"]["5"]="W";
 $PERM["contacts"]["5"]="W";
 $PERM["company"]["5"]="W";
 $PERM["index.php"]["5"]="W";
-$PERM["/"]["*"]="R";
 ?>
