@@ -6,24 +6,7 @@ $APPLICATION->SetTitle("Новая страница");
 	"",
 	Array(
 		"AREA_FILE_SHOW" => "page",
-		"AREA_FILE_SUFFIX" => "inc",
+		"AREA_FILE_SUFFIX" => "about",
 		"EDIT_TEMPLATE" => ""
 	)
-);?><?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "page",
-		"AREA_FILE_SUFFIX" => "feature2",
-		"EDIT_TEMPLATE" => ""
-	)
-);?><?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "page",
-		"AREA_FILE_SUFFIX" => "feature1",
-		"EDIT_TEMPLATE" => ""
-	)
-);?><br>
- <br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?><br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

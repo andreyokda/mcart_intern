@@ -31,10 +31,18 @@ $APPLICATION->SetTitle("Мебельная компания");
 		</div>
 	</div>
 </div>
+
+  <?
+  global $arrFilter;
+  $arrFilter = [
+      "ACTIVE" => "Y",
+      "PRIORITY_DEAL" => "Да"
+  ];
+  ?>
  <?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	".default",
-	Array(
+	"bitrix:news.list", 
+	".default", 
+	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"AJAX_MODE" => "N",
@@ -44,7 +52,7 @@ $APPLICATION->SetTitle("Мебельная компания");
 		"AJAX_OPTION_STYLE" => "Y",
 		"CACHE_FILTER" => "N",
 		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "36000000",
+		"CACHE_TIME" => "604800",
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
 		"COMPONENT_TEMPLATE" => ".default",
@@ -55,8 +63,11 @@ $APPLICATION->SetTitle("Мебельная компания");
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array(0=>"",1=>"",),
-		"FILTER_NAME" => "",
+		"FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"FILTER_NAME" => "arrFilter",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "2",
 		"IBLOCK_TYPE" => "ads",
@@ -74,7 +85,10 @@ $APPLICATION->SetTitle("Мебельная компания");
 		"PARENT_SECTION" => "",
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array(0=>"",1=>"",),
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_META_DESCRIPTION" => "Y",
@@ -87,7 +101,8 @@ $APPLICATION->SetTitle("Мебельная компания");
 		"SORT_ORDER1" => "ASC",
 		"SORT_ORDER2" => "",
 		"STRICT_SECTION_CHECK" => "N"
-	)
+	),
+	false
 );?><br>
  <br>
  <br>
@@ -328,6 +343,35 @@ $APPLICATION->SetTitle("Мебельная компания");
 		</div>
 	</div>
 </div>
+
+<?$APPLICATION->IncludeComponent(
+	"bitrix:news.line", 
+	".default", 
+	array(
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "172 800",
+		"CACHE_TYPE" => "A",
+		"DETAIL_URL" => "",
+		"FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"IBLOCKS" => array(
+			0 => "2",
+		),
+		"IBLOCK_TYPE" => "ads",
+		"NEWS_COUNT" => "9",
+		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER1" => "DESC",
+		"SORT_ORDER2" => "ASC",
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
+);?> <br>
+
+
 <div class="site-section">
 	<div class="container">
 		<div class="row justify-content-center">
@@ -389,6 +433,34 @@ $APPLICATION->SetTitle("Мебельная компания");
 		</div>
 	</div>
 </div>
+
+<?$APPLICATION->IncludeComponent(
+	"bitrix:news.line", 
+	".default", 
+	array(
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "7 776 000",
+		"CACHE_TYPE" => "A",
+		"DETAIL_URL" => "",
+		"FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"IBLOCKS" => array(
+			0 => "7",
+		),
+		"IBLOCK_TYPE" => "service",
+		"NEWS_COUNT" => "6",
+		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER1" => "DESC",
+		"SORT_ORDER2" => "ASC",
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
+);?> <br>
+
 <div class="site-section bg-light">
 	<div class="container">
 		<div class="row justify-content-center mb-5">
@@ -432,35 +504,36 @@ $APPLICATION->SetTitle("Мебельная компания");
 		</div>
 	</div>
 </div>
- <?$APPLICATION->IncludeComponent(
-	"bitrix:news.line",
-	"",
-	Array(
+
+<?$APPLICATION->IncludeComponent(
+	"bitrix:news.line", 
+	".default", 
+	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "300",
+		"CACHE_TIME" => "604 800",
 		"CACHE_TYPE" => "A",
 		"DETAIL_URL" => "",
-		"FIELD_CODE" => array("",""),
-		"IBLOCKS" => array("2"),
-		"IBLOCK_TYPE" => "ads",
-		"NEWS_COUNT" => "9",
+		"FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"IBLOCKS" => array(
+			0 => "6",
+		),
+		"IBLOCK_TYPE" => "news",
+		"NEWS_COUNT" => "3",
 		"SORT_BY1" => "ACTIVE_FROM",
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER1" => "DESC",
-		"SORT_ORDER2" => "ASC"
-	)
+		"SORT_ORDER2" => "ASC",
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
 );?> <br>
+ 
  <br>
- <?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "page",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => ""
-	)
-);?><br>
+
  <br>
 <p>
 </p>
