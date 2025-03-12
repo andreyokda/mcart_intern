@@ -8,16 +8,20 @@ IncludeTemplateLangFile(__FILE__);
       <div class="row">
 
         <div class="col-lg-4">
+        <div class="mb-5">
+            <h3 class="footer-heading mb-4">About HomeSpace</h3>
+            <?$APPLICATION->IncludeComponent(
+              "bitrix:main.include",
+              "",
+              Array(
+                "AREA_FILE_SHOW" => "page",
+                "AREA_FILE_SUFFIX" => "about",
+                "EDIT_TEMPLATE" => ""
+              )
+            );?>
+          </div>
 
-          <?$APPLICATION->IncludeComponent(
-          "bitrix:main.include",
-          "",
-          Array(
-            "AREA_FILE_SHOW" => "page",
-            "AREA_FILE_SUFFIX" => "about",
-            "EDIT_TEMPLATE" => ""
-          )
-        );?><br>
+          
 
 
         </div>
@@ -47,25 +51,25 @@ IncludeTemplateLangFile(__FILE__);
             </div>
 
             <?$APPLICATION->IncludeComponent(
-              "bitrix:menu", 
-              "bootstrap_v4", 
-              array(
-                "ALLOW_MULTI_SELECT" => "N",
-                "CHILD_MENU_TYPE" => "left",
-                "DELAY" => "N",
-                "MAX_LEVEL" => "4",
-                "MENU_CACHE_GET_VARS" => array(
-                ),
-                "MENU_CACHE_TIME" => "3600",
-                "MENU_CACHE_TYPE" => "N",
-                "MENU_CACHE_USE_GROUPS" => "Y",
-                "ROOT_MENU_TYPE" => "top",
-                "USE_EXT" => "N",
-                "COMPONENT_TEMPLATE" => "bootstrap_v4",
-                "MENU_THEME" => "site"
-              ),
-              false
-            );?>
+	"bitrix:menu", 
+	"bootstrap_v4", 
+	array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "left",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "1",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "top",
+		"USE_EXT" => "N",
+		"COMPONENT_TEMPLATE" => "bootstrap_v4",
+		"MENU_THEME" => "site"
+	),
+	false
+);?>
 
           </div>
 
@@ -73,8 +77,9 @@ IncludeTemplateLangFile(__FILE__);
 
 
         <div class="col-lg-4 mb-5 mb-lg-0">
-          
+        <h3 class="footer-heading mb-4">Follow Us</h3>
 
+          <div>
           <?$APPLICATION->IncludeComponent(
             "bitrix:main.include",
             "",
@@ -83,24 +88,41 @@ IncludeTemplateLangFile(__FILE__);
               "AREA_FILE_SUFFIX" => "follow",
               "EDIT_TEMPLATE" => ""
             )
-          );?><br>
+          );?>
+          </div>
+          
+
+          
 
         </div>
 
       </div>
       <div class="row pt-5 mt-5 text-center">
         <div class="col-md-12">
+
+        
+              
+          <?$APPLICATION->IncludeComponent(
+              "bitrix:main.include", 
+              ".default", 
+              array(
+                "AREA_FILE_SHOW" => "sect",
+                "AREA_FILE_SUFFIX" => "copyright",
+                "EDIT_TEMPLATE" => "",
+                "COMPONENT_TEMPLATE" => ".default",
+                "AREA_FILE_RECURSIVE" => "Y"
+              ),
+              false
+            );?>
+              
+          
+          
+        
+            
+            
           
 
-          <?$APPLICATION->IncludeComponent(
-            "bitrix:main.include",
-            "",
-            Array(
-              "AREA_FILE_SHOW" => "page",
-              "AREA_FILE_SUFFIX" => "copyright",
-              "EDIT_TEMPLATE" => ""
-            )
-          );?><br>
+          
 
         </div>
 

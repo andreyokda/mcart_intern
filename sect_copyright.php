@@ -1,0 +1,3 @@
+<p>
+	 Copyright © <script data-skip-moving='true'>document.write(new Date().getFullYear());</script> All rights reserved |&nbsp;This&nbsp;template is made with <i class="icon-heart text-danger" aria-hidden="true" style="font-family: var(--ui-font-family-primary, var(--ui-font-family-helvetica));"></i> by <a href="https://colorlib.com" target="_blank" style="font-family: var(--ui-font-family-primary, var(--ui-font-family-helvetica));">Colorlib</a>
+</p>

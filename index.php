@@ -32,14 +32,13 @@ $APPLICATION->SetTitle("Мебельная компания");
 	</div>
 </div>
 
-  <?
+<?
   global $arrFilter;
   $arrFilter = [
-      "ACTIVE" => "Y",
-      "PRIORITY_DEAL" => "Да"
+      "PROPERTY_PRIORITY_DEAL_VALUE" => "Да"
   ];
-  ?>
- <?$APPLICATION->IncludeComponent(
+  
+ $APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
 	".default", 
 	array(
@@ -86,8 +85,9 @@ $APPLICATION->SetTitle("Мебельная компания");
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "PRIORITY_DEAL",
+			1 => "PRICE",
+			2 => "",
 		),
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
@@ -103,7 +103,8 @@ $APPLICATION->SetTitle("Мебельная компания");
 		"STRICT_SECTION_CHECK" => "N"
 	),
 	false
-);?><br>
+);?>
+
  <br>
  <br>
 <div class="py-5">
@@ -113,42 +114,58 @@ $APPLICATION->SetTitle("Мебельная компания");
     
 
         <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
-          
-          <?$APPLICATION->IncludeComponent(
-        "bitrix:main.include",
-        "",
-        Array(
-          "AREA_FILE_SHOW" => "page",
-          "AREA_FILE_SUFFIX" => "feature",
-          "EDIT_TEMPLATE" => ""
-        )
-      );?>
-          
-        </div>
-        <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
-          
-            <?$APPLICATION->IncludeComponent(
-        "bitrix:main.include",
-        "",
-        Array(
-          "AREA_FILE_SHOW" => "page",
-          "AREA_FILE_SUFFIX" => "feature1",
-          "EDIT_TEMPLATE" => ""
-        )
-      );?>
+		<div class="feature d-flex align-items-start">
+            <span class="icon mr-3 flaticon-house"></span>
+            <div class="text">
+			<?$APPLICATION->IncludeComponent(
+				"bitrix:main.include",
+				"",
+				Array(
+				"AREA_FILE_SHOW" => "page",
+				"AREA_FILE_SUFFIX" => "feature",
+				"EDIT_TEMPLATE" => ""
+				)
+			);?>
+            </div>
+          </div>
           
         </div>
         <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+		<div class="feature d-flex align-items-start">
+            <span class="icon mr-3 flaticon-rent"></span>
+            <div class="text">
+			<?$APPLICATION->IncludeComponent(
+				"bitrix:main.include",
+				"",
+				Array(
+				"AREA_FILE_SHOW" => "page",
+				"AREA_FILE_SUFFIX" => "feature1",
+				"EDIT_TEMPLATE" => ""
+				)
+			);?>
+            </div>
+          </div>
           
-            <?$APPLICATION->IncludeComponent(
-        "bitrix:main.include",
-        "",
-        Array(
-          "AREA_FILE_SHOW" => "page",
-          "AREA_FILE_SUFFIX" => "inc",
-          "EDIT_TEMPLATE" => ""
-        )
-      );?>
+            
+          
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+		<div class="feature d-flex align-items-start">
+            <span class="icon mr-3 flaticon-location"></span>
+            <div class="text">
+			<?$APPLICATION->IncludeComponent(
+				"bitrix:main.include",
+				"",
+				Array(
+				"AREA_FILE_SHOW" => "page",
+				"AREA_FILE_SUFFIX" => "inc",
+				"EDIT_TEMPLATE" => ""
+				)
+			);?>
+            </div>
+          </div>
+          
+            
           
         </div>
       </div>
