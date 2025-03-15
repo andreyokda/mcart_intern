@@ -50,7 +50,7 @@ IncludeTemplateLangFile(__FILE__);
 
   <?$APPLICATION->ShowPanel()?>
 
-  <!--<div class="site-loader"></div>-->
+  <div class="site-loader"></div>
 
   <div class="site-wrap">
 

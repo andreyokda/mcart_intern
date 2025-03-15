@@ -3,11 +3,13 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Мебельная компания");
 ?>
 
+
 <?
 global $arrFilter;
   $arrFilter = [
       "PROPERTY_PRIORITY_DEAL_VALUE" => "Да"
   ];
+  
 
 $APPLICATION->IncludeComponent(
 	"bitrix:news.list",
