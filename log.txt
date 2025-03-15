@@ -1,0 +1,88 @@
+2025-03-15 15:40:02 - Host:  - UNCAUGHT_EXCEPTION - [ErrorException] E_WARNING
+session_set_save_handler(): Session save handler cannot be changed after headers have already been sent (0)
+/home/vinokurov/www/bitrix/modules/main/lib/session/session.php:33
+#0: session_set_save_handler
+	/home/vinokurov/www/bitrix/modules/main/lib/session/session.php:33
+#1: Bitrix\Main\Session\Session->__construct
+	/home/vinokurov/www/bitrix/modules/main/lib/session/sessionconfigurationresolver.php:62
+#2: Bitrix\Main\Session\SessionConfigurationResolver->resolve
+	/home/vinokurov/www/bitrix/modules/main/lib/application.php:141
+#3: Bitrix\Main\Application->initializeSessions
+	/home/vinokurov/www/bitrix/modules/main/lib/application.php:131
+#4: Bitrix\Main\Application->initializeExtendedKernel
+	/home/vinokurov/www/bitrix/modules/main/include.php:1
+#5: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_before.php:19
+#6: require(string)
+	/home/vinokurov/www/bitrix/php_interface/cron_events.php:9
+----------
+
+2025-03-15 15:40:02 - Host:  - FATAL - [ErrorException] E_ERROR
+Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home/vinokurov/www/bitrix/php_interface/dbconn.php:45) in /home/vinokurov/www/bitrix/modules/main/lib/httpresponse.php:236
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleError()
+#1 /home/vinokurov/www/bitrix/modules/main/lib/httpresponse.php(236): header()
+#2 /home/vinokurov/www/bitrix/modules/main/lib/httpresponse.php(173): Bitrix\Main\HttpResponse->flushStatus()
+#3 /home/vinokurov/www/bitrix/modules/main/lib/diag/httpexceptionhandleroutput.php(20): Bitrix\Main\HttpResponse->writeHeaders()
+#4 /home/vinokurov/www/bitrix/modules/main/lib/diag/exceptionhandler.php(274): Bitrix\Main\Diag\HttpExceptionHandlerOutput->renderExceptionMessage()
+#5 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException()
+#6 {main}
+  thrown (0)
+/home/vinokurov/www/bitrix/modules/main/lib/httpresponse.php:236
+----------
+
+2025-03-15 15:41:01 - Host:  - UNCAUGHT_EXCEPTION - [ErrorException] E_WARNING
+session_set_save_handler(): Session save handler cannot be changed after headers have already been sent (0)
+/home/vinokurov/www/bitrix/modules/main/lib/session/session.php:33
+#0: session_set_save_handler
+	/home/vinokurov/www/bitrix/modules/main/lib/session/session.php:33
+#1: Bitrix\Main\Session\Session->__construct
+	/home/vinokurov/www/bitrix/modules/main/lib/session/sessionconfigurationresolver.php:62
+#2: Bitrix\Main\Session\SessionConfigurationResolver->resolve
+	/home/vinokurov/www/bitrix/modules/main/lib/application.php:141
+#3: Bitrix\Main\Application->initializeSessions
+	/home/vinokurov/www/bitrix/modules/main/lib/application.php:131
+#4: Bitrix\Main\Application->initializeExtendedKernel
+	/home/vinokurov/www/bitrix/modules/main/include.php:1
+#5: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_before.php:19
+#6: require(string)
+	/home/vinokurov/www/bitrix/php_interface/cron_events.php:9
+----------
+
+2025-03-15 15:41:01 - Host:  - FATAL - [ErrorException] E_ERROR
+Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home/vinokurov/www/bitrix/php_interface/dbconn.php:45) in /home/vinokurov/www/bitrix/modules/main/lib/httpresponse.php:236
+Stack trace:
+#0 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleError()
+#1 /home/vinokurov/www/bitrix/modules/main/lib/httpresponse.php(236): header()
+#2 /home/vinokurov/www/bitrix/modules/main/lib/httpresponse.php(173): Bitrix\Main\HttpResponse->flushStatus()
+#3 /home/vinokurov/www/bitrix/modules/main/lib/diag/httpexceptionhandleroutput.php(20): Bitrix\Main\HttpResponse->writeHeaders()
+#4 /home/vinokurov/www/bitrix/modules/main/lib/diag/exceptionhandler.php(274): Bitrix\Main\Diag\HttpExceptionHandlerOutput->renderExceptionMessage()
+#5 [internal function]: Bitrix\Main\Diag\ExceptionHandler->handleException()
+#6 {main}
+  thrown (0)
+/home/vinokurov/www/bitrix/modules/main/lib/httpresponse.php:236
+----------
+
+2025-03-15 15:41:15 - Host: vinokurov.study.mcart.ru - UNCAUGHT_EXCEPTION - [ErrorException] E_WARNING
+String offset cast occurred (0)
+/home/vinokurov/www/bitrix/modules/main/include.php:1
+#0: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_admin_before.php:39
+#1: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/admin/php_command_line.php:55
+#2: require_once(string)
+	/home/vinokurov/www/bitrix/admin/php_command_line.php:2
+----------
+
+2025-03-15 15:41:16 - Host: vinokurov.study.mcart.ru - UNCAUGHT_EXCEPTION - [ErrorException] E_WARNING
+String offset cast occurred (0)
+/home/vinokurov/www/bitrix/modules/main/include.php:1
+#0: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_before.php:19
+#1: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/public/session.php:8
+#2: require(string)
+	/home/vinokurov/www/bitrix/tools/public_session.php:1
+----------
+
