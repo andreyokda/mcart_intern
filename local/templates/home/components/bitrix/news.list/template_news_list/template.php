@@ -13,6 +13,8 @@
 $this->setFrameMode(true);
 ?>
 
+
+
 <div class="slide-one-item home-slider owl-carousel">
     <?foreach($arResult["ITEMS"] as $arItem):?>
         <?
@@ -35,7 +37,7 @@ $this->setFrameMode(true);
                     </p>
                 <?endif;?>
                 <p class="mb-0">
-                    <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="text-uppercase small letter-spacing-1 font-weight-bold">More Details</a>
+                    <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="text-uppercase small letter-spacing-1 font-weight-bold"><?= GetMessage("DETAILS")?></a>
                 </p>
             </div>
         </div>

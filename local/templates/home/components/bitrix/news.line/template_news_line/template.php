@@ -39,16 +39,16 @@ $this->setFrameMode(true);
                     <div class="prop-more-info">
                         <div class="inner d-flex">
                             <div class="col">
-                                Area: <strong><?=$arItem["PROPERTY_TOTAL_AREA_VALUE"]?>m<sup>2</sup></strong>
+                            <?= GetMessage("AREA")?>: <strong><?=$arItem["PROPERTY_TOTAL_AREA_VALUE"]?><?= GetMessage("METER")?><sup>2</sup></strong>
                             </div>
                             <div class="col">
-                                Beds: <strong><?=$arItem["PROPERTY_NUMBER_OF_FLOORS_VALUE"]?></strong>
+                            <?= GetMessage("BEDS")?>: <strong><?=$arItem["PROPERTY_NUMBER_OF_FLOORS_VALUE"]?></strong>
                             </div>
                             <div class="col">
-                                Baths: <strong><?=$arItem["PROPERTY_BATHROOMS_VALUE"]?></strong>
+                            <?= GetMessage("BATHS")?>: <strong><?=$arItem["PROPERTY_BATHROOMS_VALUE"]?></strong>
                             </div>
                             <div class="col">
-                                Garages: <strong><?=$arItem["PROPERTY_GARAGE_VALUE"]?></strong>
+                            <?= GetMessage("GARAGES")?>: <strong><?=$arItem["PROPERTY_GARAGE_VALUE"]?></strong>
                             </div>
                         </div>
                     </div>

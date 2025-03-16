@@ -29,7 +29,7 @@ $this->setFrameMode(true);
                 <span class="icon <?=$iconClass?>"></span>
                 <h2 class="service-heading"><?echo $arItem["NAME"]?></h2>
                 <p>
-                    <span class="read-more">Learn More</span>
+                    <span class="read-more"><?= GetMessage("LEARN_MORE")?></span>
                 </p>
             </a>
         </div>
