@@ -1,15 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("О сервисе");
-?><?$APPLICATION->IncludeComponent(
-	"bitrix:breadcrumb",
-	"template_breadcrumb",
-	Array(
-		"PATH" => "",
-		"SITE_ID" => "s1",
-		"START_FROM" => "0"
-	)
-);?>
+?>
 
 <div class="site-section border-bottom">
 	<div class="container">

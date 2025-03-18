@@ -167,4 +167,27 @@ IncludeTemplateLangFile(__FILE__);
         </div>
       </div>
     </div>
+
+    <?php
+// Получаем текущий URL
+$currentPage = $APPLICATION->GetCurPage();
+$currentPage = $APPLICATION->GetCurPage();
+
+// Проверяем, на какой странице находится пользователь
+if ($currentPage != '/' ) {
+    // Выводим хлебные крошки
+    $APPLICATION->IncludeComponent(
+      "bitrix:breadcrumb",
+      "template_breadcrumb",
+      Array(
+        "PATH" => "",
+        "SITE_ID" => "s1",
+        "START_FROM" => "0"
+      ),
+        false
+    );
+}
+?>
+
+
   </div>
