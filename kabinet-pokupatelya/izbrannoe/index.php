@@ -2,9 +2,9 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Избранное");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:news.list", 
-	"bootstrap_v4", 
-	array(
+	"bitrix:news.list",
+	"bootstrap_v4",
+	Array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"AJAX_MODE" => "N",
@@ -17,6 +17,7 @@ $APPLICATION->SetTitle("Избранное");
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
+		"COMPONENT_TEMPLATE" => "bootstrap_v4",
 		"DETAIL_URL" => "",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
@@ -24,16 +25,15 @@ $APPLICATION->SetTitle("Избранное");
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array(
-			0 => "",
-			1 => "",
-		),
+		"FIELD_CODE" => array(0=>"",1=>"",),
+		"FILE_404" => "",
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "2",
 		"IBLOCK_TYPE" => "news",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"INCLUDE_SUBSECTIONS" => "Y",
+		"MEDIA_PROPERTY" => "",
 		"MESSAGE_404" => "",
 		"NEWS_COUNT" => "20",
 		"PAGER_BASE_LINK_ENABLE" => "N",
@@ -46,10 +46,8 @@ $APPLICATION->SetTitle("Избранное");
 		"PARENT_SECTION" => "",
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
-		),
+		"PROPERTY_CODE" => array(0=>"",1=>"",),
+		"SEARCH_PAGE" => "/search/",
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_META_DESCRIPTION" => "Y",
@@ -57,19 +55,14 @@ $APPLICATION->SetTitle("Избранное");
 		"SET_STATUS_404" => "Y",
 		"SET_TITLE" => "Y",
 		"SHOW_404" => "Y",
+		"SLIDER_PROPERTY" => "",
 		"SORT_BY1" => "ACTIVE_FROM",
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N",
-		"COMPONENT_TEMPLATE" => "bootstrap_v4",
 		"TEMPLATE_THEME" => "blue",
-		"MEDIA_PROPERTY" => "",
-		"SLIDER_PROPERTY" => "",
-		"SEARCH_PAGE" => "/search/",
 		"USE_RATING" => "N",
-		"USE_SHARE" => "N",
-		"FILE_404" => ""
-	),
-	false
+		"USE_SHARE" => "N"
+	)
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

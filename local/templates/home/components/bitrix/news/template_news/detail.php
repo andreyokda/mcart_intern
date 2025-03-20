@@ -28,7 +28,7 @@ $ElementID = $APPLICATION->IncludeComponent(
 		"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 		"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 		"FIELD_CODE" => $arParams["DETAIL_FIELD_CODE"],
-		"PROPERTY_CODE" => array(0=>"BATHROOMS",1=>"NUMBER_OF_FLOORS",2=>"GARAGE",3=>"TOTAL_AREA",4=>"PRICE",5=>"IMAGE_GALLERY",),
+		"PROPERTY_CODE" => array(0=>"BATHROOMS",1=>"NUMBER_OF_FLOORS",2=>"GARAGE",3=>"TOTAL_AREA",4=>"PRICE",5=>"IMAGE_GALLERY",6=>"MATERIALS",7=>"LINKS_TO_RESOURCES"),
 		"DETAIL_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["detail"],
 		"SECTION_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["section"],
 		"META_KEYWORDS" => $arParams["META_KEYWORDS"],

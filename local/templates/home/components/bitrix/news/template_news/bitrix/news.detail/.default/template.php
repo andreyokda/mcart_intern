@@ -32,7 +32,7 @@ $this->setFrameMode(true);
         <div class="mb-5">
           <div class="slide-one-item home-slider owl-carousel">
             <?php
-            $imageGallery = $arResult['PROPERTIES']['IMAGE_GALLERY']['VALUE'];
+            $imageGallery = $arResult['DISPLAY_PROPERTIES']['IMAGE_GALLERY']['VALUE'];
             if (!empty($imageGallery)) {
               foreach ($imageGallery as $imageId) {
                   $imagePath = CFile::GetPath($imageId);
@@ -50,7 +50,7 @@ $this->setFrameMode(true);
         <div class="bg-white">
           <div class="row mb-5">
             <div class="col-md-6">
-              <strong class="text-success h1 mb-3">$<?=$arResult["PROPERTIES"]["PRICE"]["VALUE"]?></strong>
+              <strong class="text-success h1 mb-3">$<?=$arResult["DISPLAY_PROPERTIES"]["PRICE"]["VALUE"]?></strong>
             </div>
             <div class="col-md-6">
               <ul class="property-specs-wrap mb-3 mb-lg-0  float-lg-right">
@@ -62,11 +62,11 @@ $this->setFrameMode(true);
                 </li>
                 <li>
                   <span class="property-specs"><?= GetMessage("BEDS")?></span>
-                  <span class="property-specs-number"><?=$arResult["PROPERTIES"]["NUMBER_OF_FLOORS"]["VALUE"] ?? '0'?></span>
+                  <span class="property-specs-number"><?=$arResult["DISPLAY_PROPERTIES"]["NUMBER_OF_FLOORS"]["VALUE"] ?? '0'?></span>
                 </li>
                 <li>
                   <span class="property-specs"><?= GetMessage("AREA")?></span>
-                  <span class="property-specs-number"><?=$arResult["PROPERTIES"]["TOTAL_AREA"]["VALUE"] ?? '0'?>m<sup>2</sup></span>
+                  <span class="property-specs-number"><?=$arResult["DISPLAY_PROPERTIES"]["TOTAL_AREA"]["VALUE"] ?? '0'?><?= GetMessage("METER")?><sup>2</sup></span>
                 </li>
               </ul>
             </div>
@@ -75,11 +75,11 @@ $this->setFrameMode(true);
         <div class="row mb-5">
           <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
             <span class="d-inline-block text-black mb-0 caption-text"><?= GetMessage("BATHS")?></span>
-            <strong class="d-block"><?=$arResult["PROPERTIES"]["BATHROOMS"]["VALUE"] ?? '0'?></strong>
+            <strong class="d-block"><?=$arResult["DISPLAY_PROPERTIES"]["BATHROOMS"]["VALUE"] ?? '0'?></strong>
           </div>
           <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
             <span class="d-inline-block text-black mb-0 caption-text"><?= GetMessage("GARAGES")?></span>
-            <strong class="d-block"><?=$arResult["PROPERTIES"]["GARAGE"]["VALUE"] ?? '0'?></strong>
+            <strong class="d-block"><?=$arResult["DISPLAY_PROPERTIES"]["GARAGE"]["VALUE"] ?? '0'?></strong>
           </div>
         </div>
 
@@ -93,7 +93,7 @@ $this->setFrameMode(true);
           </div>
 
             <?php
-            $imageGallery = $arResult['PROPERTIES']['IMAGE_GALLERY']['VALUE'];
+            $imageGallery = $arResult['DISPLAY_PROPERTIES']['IMAGE_GALLERY']['VALUE'];
             if (!empty($imageGallery)) {
               foreach ($imageGallery as $imageId) {
                   $imagePath = CFile::GetPath($imageId);
@@ -144,11 +144,11 @@ $this->setFrameMode(true);
           </div>
 
           <div class="col-lg-8">
-          <?php if (!empty($arResult['PROPERTIES']['MATERIALS']['VALUE'])): ?>
+          <?php if (!empty($arResult['DISPLAY_PROPERTIES']['MATERIALS']['VALUE'])): ?>
               
                   <h3>Материалы<?= GetMessage("")?></h3>
                   <ul>
-                      <?php foreach ($arResult['PROPERTIES']['MATERIALS']['VALUE'] as $fileId): ?>
+                      <?php foreach ($arResult['DISPLAY_PROPERTIES']['MATERIALS']['VALUE'] as $fileId): ?>
                           <?php
                           $filePath = CFile::GetPath($fileId);
                           ?>
@@ -162,11 +162,11 @@ $this->setFrameMode(true);
           </div>
 
           <div class="col-lg-8">
-          <?php if (!empty($arResult['PROPERTIES']['LINKS_TO_RESOURCES']['VALUE'])): ?>
+          <?php if (!empty($arResult['DISPLAY_PROPERTIES']['LINKS_TO_RESOURCES']['VALUE'])): ?>
               
                   <h3>Ссылки на ресурсы<?= GetMessage("")?></h3>
                   <ul>
-                      <?php foreach ($arResult['PROPERTIES']['LINKS_TO_RESOURCES']['VALUE'] as $link): ?>
+                      <?php foreach ($arResult['DISPLAY_PROPERTIES']['LINKS_TO_RESOURCES']['VALUE'] as $link): ?>
                           <li><a href="<?= $link ?>" target="_blank"><?= $link ?></a></li>
                       <?php endforeach; ?>
                   </ul>
