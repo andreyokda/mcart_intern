@@ -1,9 +1,22 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Мои объявления");
-?><?$APPLICATION->IncludeComponent(
+?><?
+
+$currentUserId = $GLOBALS['USER']->GetID();
+
+if ($currentUserId > 0) {
+    $arFilter = [
+        "CREATED_BY" => $currentUserId, 
+        "ACTIVE" => "Y", 
+    ];
+} else {
+    $arFilter = ["ID" => 0];
+}
+?>
+<?$APPLICATION->IncludeComponent(
 	"bitrix:news",
-	"bootstrap_v4",
+	"template_news",
 	Array(
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -29,22 +42,26 @@ $APPLICATION->SetTitle("Мои объявления");
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
+		"DISPLAY_HEADING" => "Мои объявления",
 		"DISPLAY_NAME" => "Y",
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
+		"FILTER_FIELD_CODE" => array("CREATED_BY","CREATED_USER_NAME",""),
+		"FILTER_NAME" => "arFilter",
+		"FILTER_PROPERTY_CODE" => array("",""),
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "2",
-		"IBLOCK_TYPE" => "news",
+		"IBLOCK_TYPE" => "ads",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"LIST_FIELD_CODE" => array("",""),
-		"LIST_PROPERTY_CODE" => array("",""),
+		"LIST_PROPERTY_CODE" => array("BATHROOMS","NUMBER_OF_FLOORS","GARAGE","TOTAL_AREA","PRICE",""),
 		"LIST_USE_SHARE" => "",
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
 		"META_KEYWORDS" => "-",
-		"NEWS_COUNT" => "20",
+		"NEWS_COUNT" => "6",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
