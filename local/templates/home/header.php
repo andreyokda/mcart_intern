@@ -98,10 +98,14 @@ IncludeTemplateLangFile(__FILE__);
                     )
                   );?>
                 </span></a>
+
+                
             
             </p>
           </div>
           <div class="col-6 col-md-6 text-right">
+          <a href="/login/avtorizatsiya.php" class="mr-3"><span class="text-black"></span> <span
+          class="d-none d-md-inline-block ml-2">Авторизация</span></a>
           <?$APPLICATION->IncludeComponent(
             "bitrix:main.include",
             "",
