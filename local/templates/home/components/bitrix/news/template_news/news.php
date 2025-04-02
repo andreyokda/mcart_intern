@@ -114,13 +114,7 @@ $this->setFrameMode(true);?>
     </div>
 <div class="site-section site-section-sm bg-light">
 	<div class="container">
-		<div class="row mb-5">
-			<div class="col-12">
-				<div class="site-section-title">
-					<h2><?= htmlspecialcharsbx($arParams['DISPLAY_HEADING']) ?></h2>
-				</div>
-			</div>
-		</div>
+		
 <?
 if($arParams["USE_RSS"]=="Y"):
 	if(method_exists($APPLICATION, 'addheadstring'))
@@ -207,7 +201,7 @@ $APPLICATION->IncludeComponent(
 		"PAGER_BASE_LINK_ENABLE" => $arParams["PAGER_BASE_LINK_ENABLE"],
 		"PAGER_BASE_LINK" => $arParams["PAGER_BASE_LINK"],
 		"PAGER_PARAMS_NAME" => $arParams["PAGER_PARAMS_NAME"],
-		
+		"DISPLAY_HEADING" => $arParams['DISPLAY_HEADING'],
 		"DISPLAY_DATE" => $arParams["DISPLAY_DATE"],
 		"DISPLAY_NAME" => "Y",
 		"DISPLAY_PICTURE" => $arParams["DISPLAY_PICTURE"],
