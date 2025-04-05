@@ -34,7 +34,7 @@ $this->setFrameMode(true);
         <div class="agent__card">
           <div class="small-info">
 
-            <div class="avatar" style="background-image: url('<?= \CFile::GetPath($arAgent['UF_PHOTO']) ?>');"></div>
+            <div class="avatar" style="background-image: url('<?= ($arAgent['UF_PHOTO'] ? \CFile::GetPath($arAgent['UF_PHOTO']) : '/local/components/mcart/agents.list/templates/.default/images/no-avatar.png') ?>');"></div>
             <div class="info">
               <div class="name"><?= htmlspecialchars($arAgent['UF_LFNAME']) ?></div>
             </div>
