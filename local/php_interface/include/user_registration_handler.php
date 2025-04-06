@@ -22,10 +22,10 @@ class UserRegistrationHandler
             if ($user && isset($user["UF_USER"])) {
                 $groupId = null;
 
-                if ($user["UF_USER"] === "SELLER") {
-                    $groupId = 6; 
-                } elseif ($user["UF_USER"] === "BUYER") {
+                if ($user["UF_USER"] === "14") {
                     $groupId = 7; 
+                } elseif ($user["UF_USER"] === "15") {
+                    $groupId = 6; 
                 }
 
                 if ($groupId) {

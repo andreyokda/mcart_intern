@@ -91,8 +91,8 @@ if ($arResult["SHOW_SMS_FIELD"] == true) {
 				<div class="col-md-12 mb-3 mb-md-0">
 					<label class="font-weight-bold"><?=GetMessage("REGISTER_FIELD_UF_USER")?></label>
 					<div>
-						<label><input type="radio" name="REGISTER[UF_USER]" value="SELLER" <?=($arResult["VALUES"]["UF_USER"] == "SELLER") ? "checked" : "";?>> Покупатель</label>
-						<label><input type="radio" name="REGISTER[UF_USER]" value="BUYER" <?=($arResult["VALUES"]["UF_USER"] == "BUYER") ? "checked" : "";?>> Продавец</label>
+						<label><input type="radio" name="UF_USER" value="15" <?=($arResult["VALUES"]["UF_USER"] == "15") ? "checked" : "";?>> Покупатель</label>
+						<label><input type="radio" name="UF_USER" value="14" <?=($arResult["VALUES"]["UF_USER"] == "14") ? "checked" : "";?>> Продавец</label>
 					</div>
 				</div>
 			</div>
