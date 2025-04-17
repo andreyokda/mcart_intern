@@ -1,0 +1,32 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Отчеты", 
+		"/statistic_na/main/info/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Данные", 
+		"/statistic_na/main/table/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Базы", 
+		"/statistic_na/extra/base/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Информация", 
+		"/statistic_na/extra/info/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

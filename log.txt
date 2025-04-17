@@ -86,3 +86,426 @@ String offset cast occurred (0)
 	/home/vinokurov/www/bitrix/tools/public_session.php:1
 ----------
 
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-05 19:40:37
+array (
+  0 => '211',
+  1 => 
+  array (
+    'UF_USER' => false,
+  ),
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/local/php_interface/include/user_registration_handler.php:21
+#1: UserRegistrationHandler::onAfterUserAdd
+	/home/vinokurov/www/bitrix/modules/main/tools.php:5246
+#2: ExecuteModuleEventEx
+	/home/vinokurov/www/bitrix/modules/main/classes/general/user.php:329
+#3: CAllUser->Add
+	/home/vinokurov/www/bitrix/components/bitrix/main.register/component.php:199
+#4: include(string)
+	/home/vinokurov/www/bitrix/modules/main/classes/general/component.php:615
+#5: CBitrixComponent->__includeComponent
+	/home/vinokurov/www/bitrix/modules/main/classes/general/component.php:692
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-06 10:05:41
+array (
+  0 => '2111',
+  1 => 
+  array (
+    'UF_USER' => '15',
+  ),
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/local/php_interface/include/user_registration_handler.php:21
+#1: UserRegistrationHandler::onAfterUserAdd
+	/home/vinokurov/www/bitrix/modules/main/tools.php:5246
+#2: ExecuteModuleEventEx
+	/home/vinokurov/www/bitrix/modules/main/classes/general/user.php:329
+#3: CAllUser->Add
+	/home/vinokurov/www/bitrix/components/bitrix/main.register/component.php:199
+#4: include(string)
+	/home/vinokurov/www/bitrix/modules/main/classes/general/component.php:615
+#5: CBitrixComponent->__includeComponent
+	/home/vinokurov/www/bitrix/modules/main/classes/general/component.php:692
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-06 10:07:10
+array (
+  0 => '2111',
+  1 => 
+  array (
+    'UF_USER' => '14',
+  ),
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/local/php_interface/include/user_registration_handler.php:21
+#1: UserRegistrationHandler::onAfterUserAdd
+	/home/vinokurov/www/bitrix/modules/main/tools.php:5246
+#2: ExecuteModuleEventEx
+	/home/vinokurov/www/bitrix/modules/main/classes/general/user.php:329
+#3: CAllUser->Add
+	/home/vinokurov/www/bitrix/components/bitrix/main.register/component.php:199
+#4: include(string)
+	/home/vinokurov/www/bitrix/modules/main/classes/general/component.php:615
+#5: CBitrixComponent->__includeComponent
+	/home/vinokurov/www/bitrix/modules/main/classes/general/component.php:692
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-14 19:30:55
+array (
+  0 => '1555',
+  1 => '/local/templates/exam1_type2',
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/local/templates/exam1_type2/header.php:15
+#1: include_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_after.php:88
+#2: require(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:11
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#4: require_once(string)
+	/home/vinokurov/www/s2/statistic_na/index.php:2
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-14 19:30:55
+array (
+  0 => '1555',
+  1 => '/local/templates/exam1_type2',
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/local/templates/exam1_type2/header.php:15
+#1: include_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_after.php:88
+#2: require(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:11
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#4: require(string)
+	/home/vinokurov/www/s2/statistic_na/dashboard/index.php:2
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-14 19:34:20
+array (
+  0 => '1555',
+  1 => '/local/templates/exam1_type2',
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/local/templates/exam1_type2/header.php:15
+#1: include_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_after.php:88
+#2: require(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:11
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#4: require(string)
+	/home/vinokurov/www/s2/statistic_na/dashboard/index.php:2
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-14 19:34:24
+array (
+  0 => '1555',
+  1 => '/local/templates/exam1_type2',
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/local/templates/exam1_type2/header.php:15
+#1: include_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_after.php:88
+#2: require(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:11
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#4: require(string)
+	/home/vinokurov/www/s2/statistic_na/extra/base/index.php:2
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-14 19:34:26
+array (
+  0 => '1555',
+  1 => '/local/templates/exam1_type2',
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/local/templates/exam1_type2/header.php:15
+#1: include_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_after.php:88
+#2: require(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:11
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#4: require(string)
+	/home/vinokurov/www/s2/statistic_na/main/info/index.php:2
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-14 19:34:29
+array (
+  0 => '1555',
+  1 => '/local/templates/exam1_type2',
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/local/templates/exam1_type2/header.php:15
+#1: include_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_after.php:88
+#2: require(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:11
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#4: require(string)
+	/home/vinokurov/www/s2/statistic_na/dashboard/index.php:2
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-14 19:34:59
+array (
+  0 => '1555',
+  1 => '/local/templates/exam1_type2',
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/local/templates/exam1_type2/header.php:15
+#1: include_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_after.php:88
+#2: require(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:11
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#4: require(string)
+	/home/vinokurov/www/s2/statistic_na/dashboard/index.php:2
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-16 17:48:01
+array (
+  0 => '2724',
+  1 => 
+  array (
+    'ID' => '2',
+    'LID' => 's1',
+    'ACTIVE' => 'Y',
+    'BLOCKED' => 'N',
+    'CONFIRM_CODE' => NULL,
+    'LOGIN' => 'mcart',
+    'EMAIL' => 's.reshetnikov@mcart.ru',
+    'NAME' => '',
+    'LAST_NAME' => '',
+    'LANGUAGE_ID' => 'ru',
+  ),
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/bitrix/modules/main/classes/general/user.php:2725
+#1: CAllUser::SendPassword
+	/home/vinokurov/www/bitrix/modules/main/include.php:371
+#2: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:10
+#4: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#5: require(string)
+	/home/vinokurov/www/login/index.php:3
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-16 17:51:03
+array (
+  0 => '2724',
+  1 => 
+  array (
+    'ID' => '2',
+    'LID' => 's1',
+    'ACTIVE' => 'Y',
+    'BLOCKED' => 'N',
+    'CONFIRM_CODE' => NULL,
+    'LOGIN' => 'mcart',
+    'EMAIL' => 's.reshetnikov@mcart.ru',
+    'NAME' => '',
+    'LAST_NAME' => '',
+    'LANGUAGE_ID' => 'ru',
+  ),
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/bitrix/modules/main/classes/general/user.php:2725
+#1: CAllUser::SendPassword
+	/home/vinokurov/www/bitrix/modules/main/include.php:371
+#2: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:10
+#4: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#5: require(string)
+	/home/vinokurov/www/login/index.php:3
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-16 17:51:23
+array (
+  0 => '2724',
+  1 => 
+  array (
+    'ID' => '2',
+    'LID' => 's1',
+    'ACTIVE' => 'Y',
+    'BLOCKED' => 'N',
+    'CONFIRM_CODE' => NULL,
+    'LOGIN' => 'mcart',
+    'EMAIL' => 's.reshetnikov@mcart.ru',
+    'NAME' => '',
+    'LAST_NAME' => '',
+    'LANGUAGE_ID' => 'ru',
+  ),
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/bitrix/modules/main/classes/general/user.php:2725
+#1: CAllUser::SendPassword
+	/home/vinokurov/www/bitrix/modules/main/include.php:371
+#2: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:10
+#4: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#5: require(string)
+	/home/vinokurov/www/login/index.php:3
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-16 17:53:08
+array (
+  0 => '2724',
+  1 => 
+  array (
+    'ID' => '2',
+    'LID' => 's1',
+    'ACTIVE' => 'Y',
+    'BLOCKED' => 'N',
+    'CONFIRM_CODE' => NULL,
+    'LOGIN' => 'mcart',
+    'EMAIL' => 's.reshetnikov@mcart.ru',
+    'NAME' => '',
+    'LAST_NAME' => '',
+    'LANGUAGE_ID' => 'ru',
+  ),
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/bitrix/modules/main/classes/general/user.php:2725
+#1: CAllUser::SendPassword
+	/home/vinokurov/www/bitrix/modules/main/include.php:371
+#2: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:10
+#4: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#5: require(string)
+	/home/vinokurov/www/login/index.php:3
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-16 17:54:30
+array (
+  0 => '2724',
+  1 => 
+  array (
+    'ID' => '2',
+    'LID' => 's1',
+    'ACTIVE' => 'Y',
+    'BLOCKED' => 'N',
+    'CONFIRM_CODE' => NULL,
+    'LOGIN' => 'mcart',
+    'EMAIL' => 's.reshetnikov@mcart.ru',
+    'NAME' => '',
+    'LAST_NAME' => '',
+    'LANGUAGE_ID' => 'ru',
+  ),
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/bitrix/modules/main/classes/general/user.php:2725
+#1: CAllUser::SendPassword
+	/home/vinokurov/www/bitrix/modules/main/include.php:371
+#2: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:10
+#4: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#5: require(string)
+	/home/vinokurov/www/login/index.php:3
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-16 17:55:21
+array (
+  0 => '2725',
+  1 => 
+  array (
+    'LOGIN' => 'mcart',
+    'EMAIL' => 'mcart',
+    'SITE_ID' => 's1',
+    'PHONE_NUMBER' => '',
+    'SHORT_CODE' => false,
+  ),
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/bitrix/modules/main/classes/general/user.php:2745
+#1: CAllUser::SendPassword
+	/home/vinokurov/www/bitrix/modules/main/include.php:371
+#2: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:10
+#4: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#5: require(string)
+	/home/vinokurov/www/login/index.php:3
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-16 17:55:21
+array (
+  0 => '2724',
+  1 => 
+  array (
+    'ID' => '2',
+    'LID' => 's1',
+    'ACTIVE' => 'Y',
+    'BLOCKED' => 'N',
+    'CONFIRM_CODE' => NULL,
+    'LOGIN' => 'mcart',
+    'EMAIL' => 's.reshetnikov@mcart.ru',
+    'NAME' => '',
+    'LAST_NAME' => '',
+    'LANGUAGE_ID' => 'ru',
+  ),
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/bitrix/modules/main/classes/general/user.php:2761
+#1: CAllUser::SendPassword
+	/home/vinokurov/www/bitrix/modules/main/include.php:371
+#2: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:10
+#4: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#5: require(string)
+	/home/vinokurov/www/login/index.php:3
+----------
+Host: vinokurov.study.mcart.ru
+Date: 2025-04-16 17:55:21
+array (
+  0 => '2725',
+  1 => 
+  array (
+    'LOGIN' => 'mcart',
+    'EMAIL' => 'mcart',
+    'SITE_ID' => 's1',
+    'PHONE_NUMBER' => '',
+    'SHORT_CODE' => false,
+  ),
+)
+#0: AddMessage2Log
+	/home/vinokurov/www/bitrix/modules/main/classes/general/user.php:2762
+#1: CAllUser::SendPassword
+	/home/vinokurov/www/bitrix/modules/main/include.php:371
+#2: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require_once(string)
+	/home/vinokurov/www/bitrix/modules/main/include/prolog.php:10
+#4: require_once(string)
+	/home/vinokurov/www/bitrix/header.php:1
+#5: require(string)
+	/home/vinokurov/www/login/index.php:3
+----------

@@ -1,0 +1,12 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Дашборд");
+?>
+<?
+$APPLICATION->IncludeComponent(
+"bitrix:system.auth.forgotpasswd",
+"template_forgot",
+Array()
+);
+?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

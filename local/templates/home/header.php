@@ -126,7 +126,7 @@ IncludeTemplateLangFile(__FILE__);
       <div class="container py-1">
         <div class="row align-items-center">
           <div class="col-8 col-md-8 col-lg-4">
-          <h1 class=""><a href="index.html" class="h5 text-uppercase text-black"><strong><?$APPLICATION->IncludeComponent(
+          <h1 class=""><a href="/" class="h5 text-uppercase text-black"><strong><?$APPLICATION->IncludeComponent(
             "bitrix:main.include",
             ".default",
             Array(
@@ -143,23 +143,25 @@ IncludeTemplateLangFile(__FILE__);
           </div>
           <div class="col-4 col-md-4 col-lg-8">
           <?$APPLICATION->IncludeComponent(
-              "bitrix:menu",
-              "top_menu",
-              Array(
-                "ALLOW_MULTI_SELECT" => "N",
-                "CHILD_MENU_TYPE" => "left",
-                "COMPONENT_TEMPLATE" => "horizontal_multilevel",
-                "DELAY" => "N",
-                "MAX_LEVEL" => "4",
-                "MENU_CACHE_GET_VARS" => "",
-                "MENU_CACHE_TIME" => "3600",
-                "MENU_CACHE_TYPE" => "A",
-                "MENU_CACHE_USE_GROUPS" => "Y",
-                "MENU_THEME" => "site",
-                "ROOT_MENU_TYPE" => "top",
-                "USE_EXT" => "N"
-              )
-            );?>
+	"bitrix:menu", 
+	"top_menu", 
+	array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "left",
+		"COMPONENT_TEMPLATE" => "top_menu",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "4",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_USE_GROUPS" => "N",
+		"MENU_THEME" => "site",
+		"ROOT_MENU_TYPE" => "top",
+		"USE_EXT" => "N"
+	),
+	false
+);?>
 
 
 

@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Присоединиться";
+$arDirProperties = Array(
+
+);
+?>

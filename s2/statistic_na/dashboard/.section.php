@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Дашборд";
+$arDirProperties = Array(
+
+);
+?>
